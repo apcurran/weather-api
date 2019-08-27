@@ -42,6 +42,8 @@ const weatherApp = (() => {
         updatePageTemp(apiData);
         updatePageSummary(apiData);
         updatePageIcon(apiData);
+
+        locationInput.value = null;
     }
 
     function getWeather(event) {

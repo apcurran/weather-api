@@ -34,9 +34,10 @@ input {
 .card {
     max-width: 90%;
     width: 1260px;
-    height: 40vh;
+    height: 550px;
+    padding: 2em;
 
-    background-color: rgba(173, 216, 230, .3);
+    background-color: rgba(173, 216, 230, .2);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -44,7 +45,7 @@ input {
     align-items: center;
 
     border-radius: 4px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .1);
 
     &-title {
         margin-top: .5em;
@@ -63,7 +64,7 @@ input {
         }
 
         &-description {
-            color: #b90606;
+            color: #05e487;
         }
     }
 }
@@ -89,6 +90,8 @@ input {
         padding: .5rem 1rem;
         text-align: center;
         border: none;
+        outline: #386fa1;
+        transition: box-shadow 200ms ease;
     }
 
     &-submit-btn {
@@ -102,8 +105,12 @@ input {
     }
 }
 
+.user-location:focus {
+    box-shadow: 0 0 8px #fff;
+}
+
 .footer {
-    padding: 2em;
+    padding: 2.5em;
 
     display: flex;
     justify-content: center;
@@ -118,5 +125,11 @@ input {
 
     &-attribution a {
         color: inherit;
+    }
+}
+
+@media screen and (max-width: 25.5em) {
+    .card-title {
+        font-size: 1.55rem;
     }
 }
