@@ -12,8 +12,19 @@
         <main class="main">
             <section class="card">
                 <h1 class="card-title">Your Weather 2000</h1>
-                <h3 class="card-current-temp"></h3>
-                <img src="" alt="" class="icon">
+                <h2 class="card-city">Current City</h2>
+          
+                <img src="./images/sunny-default-icon.svg" alt="Weather icon" class="icon">
+
+                <section class="card-weather">
+                    <h3 class="card-weather-temp">
+                        <span class="degree-number"></span>
+                        <span class="degree-symbol">&deg</span>
+                        <span class="degree-unit">F</span>
+                    </h3>
+                    <h3 class="card-weather-description"></h3>
+                </section>
+
                 <form class="user">
                     <input type="text" class="user-location" placeholder="Enter City Here">
                     <input type="submit" class="user-submit-btn" value="Submit"></input>

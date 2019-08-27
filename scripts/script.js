@@ -1,19 +1,31 @@
 const weatherApp = (() => {
     // DOM Cache
+    const cityH2 = document.querySelector(".card-city");
     const locationInput = document.querySelector(".user-location");
-    const currentTempH3 = document.querySelector(".card-current-temp");
+    const currentTempSpan = document.querySelector(".degree-number");
+    const currentSummaryH3 = document.querySelector(".card-weather-description");
     const submitBtn = document.querySelector(".user-submit-btn");
     const iconImg = document.querySelector(".icon");
 
     function updatePageTemp(apiData) {
         const currentTemp = apiData.main.temp;
-        currentTempH3.textContent = currentTemp;
+        currentTempSpan.textContent = currentTemp;
     }
 
     function updatePageIcon(apiData) {
         const currentIconId = apiData.weather[0].icon;
         const currentIconUrl = `http://openweathermap.org/img/wn/${currentIconId}@2x.png`;
         iconImg.src = currentIconUrl;
+    }
+
+    function updatePageSummary(apiData) {
+        const currentWeatherDescription = apiData.weather[0].main;
+        currentSummaryH3.textContent = currentWeatherDescription;
+    }
+
+    function displayCity(apiData) {
+        const currentCity = apiData.name;
+        cityH2.textContent = currentCity;
     }
 
     function displayError(caughtError) {
@@ -25,7 +37,10 @@ const weatherApp = (() => {
 
     function updatePageData(apiData) {
         console.log(apiData);
+
+        displayCity(apiData);
         updatePageTemp(apiData);
+        updatePageSummary(apiData);
         updatePageIcon(apiData);
     }
 
