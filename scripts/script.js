@@ -1,8 +1,8 @@
 const weatherApp = (() => {
     // DOM Cache
-    const locationInput = document.querySelector(".location");
-    const currentTempH3 = document.querySelector(".current-temp");
-    const submitBtn = document.querySelector(".submit-btn");
+    const locationInput = document.querySelector(".user-location");
+    const currentTempH3 = document.querySelector(".card-current-temp");
+    const submitBtn = document.querySelector(".user-submit-btn");
     const iconImg = document.querySelector(".icon");
 
     function updatePageTemp(apiData) {

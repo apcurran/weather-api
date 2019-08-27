@@ -8,20 +8,23 @@
         <script defer src="./scripts/script.js"></script>
         <title>Document</title>
     </head>
-    <body>
-        <main class="container">
-            <h1 class="temp-title">Your Weather 2000</h1>
-            <h3 class="current-temp"></h3>
-            <img src="" alt="" class="icon">
-            <input type="text" class="location" placeholder="Enter City Here">
-            <button type="submit" class="submit-btn">Submit</button>
+    <body class="site">
+        <main class="main">
+            <section class="card">
+                <h1 class="card-title">Your Weather 2000</h1>
+                <h3 class="card-current-temp"></h3>
+                <img src="" alt="" class="icon">
+                <form class="user">
+                    <input type="text" class="user-location" placeholder="Enter City Here">
+                    <input type="submit" class="user-submit-btn" value="Submit"></input>
+                </form>
+            </section>
         </main>
 
         <footer class="footer">
             <h3 class="footer-author">Created by: Alex Curran</h3>
             <h3 class="footer-attribution">
-                Data provided by: 
-                <a href="https://home.openweathermap.org" class="footer-attribution-link" target="_blank">OpenWeatherMap</a>
+                <a href="https://openweathermap.org/api" class="footer-attribution-link" target="_blank">OpenWeatherAPI</a>
             </h3>
         </footer>
     </body>

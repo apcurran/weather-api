@@ -4,4 +4,47 @@
   box-sizing: border-box;
 }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  max-width: 90%;
+  width: 1260px;
+  height: 40vh;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  padding: 1em;
+  background-color: #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+.footer-author {
+  margin-bottom: 0.5em;
+}
+.footer-attribution a {
+  color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */
