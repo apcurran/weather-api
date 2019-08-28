@@ -55,6 +55,7 @@ input {
 }
 .card-weather-temp {
   margin-right: 1em;
+  cursor: pointer;
 }
 .card-weather-description {
   color: #05e487;

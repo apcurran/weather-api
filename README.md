@@ -13,6 +13,8 @@ Project [link](https://apcurran.github.io/weather-api/)
 
     - Updates current city, temperature, and weather conditions
 
+    - The user may click the current temperature to toggle between Fahrenheit and Celsius units
+
 - CSS Flexbox used throughout
 
 - Sass used throughout for nesting styles

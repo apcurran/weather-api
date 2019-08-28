@@ -6,6 +6,7 @@ const weatherApp = (() => {
     const currentSummaryH3 = document.querySelector(".card-weather-description");
     const submitBtn = document.querySelector(".user-submit-btn");
     const iconImg = document.querySelector(".icon");
+    const currentTempH3 = document.querySelector(".card-weather-temp");
 
     function updatePageTemp(apiData) {
         const currentTemp = apiData.main.temp;
@@ -30,8 +31,7 @@ const weatherApp = (() => {
 
     function displayError(caughtError) {
         console.error(caughtError);
-        // Show the error to the user
-        cityH2.textContent = "Sorry, but something went wrong with your request.  Please check the spelling of your city, and try again."
+        cityH2.textContent = "Sorry, but something went wrong with your request.  Please check the spelling of your city and try again."
     }
 
     function updatePageData(apiData) {
@@ -55,6 +55,26 @@ const weatherApp = (() => {
             .catch(err => displayError(err));
     }
 
+    function changeDegreeUnits(event) {
+        const tempNumberSpan = document.querySelector(".degree-number");
+        const tempUnitSpan = document.querySelector(".degree-unit");
+
+        if (tempUnitSpan.textContent === "F") {
+            // Convert to Metric Units
+            const currentTempF = tempNumberSpan.textContent;
+            const celsius = (currentTempF - 32) * (5 / 9);
+            tempUnitSpan.textContent = "C";
+            tempNumberSpan.textContent = Math.round(celsius);
+        } else {
+            // Convert to Imperial Units
+            const currentTempC = tempNumberSpan.textContent;
+            const fahrenheit = (currentTempC * (9 / 5)) + 32;
+            tempUnitSpan.textContent = "F";
+            tempNumberSpan.textContent = Math.round(fahrenheit);
+        }
+    }
+
     submitBtn.addEventListener("click", getWeather);
+    currentTempH3.addEventListener("click", changeDegreeUnits);
     
 })();
