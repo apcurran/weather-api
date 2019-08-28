@@ -64,13 +64,13 @@ const weatherApp = (() => {
             const currentTempF = tempNumberSpan.textContent;
             const celsius = (currentTempF - 32) * (5 / 9);
             tempUnitSpan.textContent = "C";
-            tempNumberSpan.textContent = Math.round(celsius);
+            tempNumberSpan.textContent = celsius.toFixed(2);
         } else {
             // Convert to Imperial Units
             const currentTempC = tempNumberSpan.textContent;
             const fahrenheit = (currentTempC * (9 / 5)) + 32;
             tempUnitSpan.textContent = "F";
-            tempNumberSpan.textContent = Math.round(fahrenheit);
+            tempNumberSpan.textContent = fahrenheit.toFixed(2);
         }
     }
 
