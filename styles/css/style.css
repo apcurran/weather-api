@@ -114,7 +114,7 @@ input {
 
 @media screen and (max-width: 25.5em) {
   .card {
-    height: 70vh;
+    height: 75%;
   }
 
   .card-title {
