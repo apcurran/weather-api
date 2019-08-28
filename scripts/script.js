@@ -30,14 +30,11 @@ const weatherApp = (() => {
 
     function displayError(caughtError) {
         console.error(caughtError);
-
         // Show the error to the user
-
+        cityH2.textContent = "Sorry, but something went wrong with your request.  Please check the spelling of your city, and try again."
     }
 
     function updatePageData(apiData) {
-        console.log(apiData);
-
         displayCity(apiData);
         updatePageTemp(apiData);
         updatePageSummary(apiData);
@@ -59,6 +56,5 @@ const weatherApp = (() => {
     }
 
     submitBtn.addEventListener("click", getWeather);
-
-
+    
 })();

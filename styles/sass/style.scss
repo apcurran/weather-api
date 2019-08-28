@@ -34,10 +34,10 @@ input {
 .card {
     max-width: 90%;
     width: 1260px;
-    height: 550px;
+    height: 60vh;
     padding: 2em;
 
-    background-color: rgba(173, 216, 230, .2);
+    background-color: rgba(12, 122, 158, 0.2);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -52,6 +52,8 @@ input {
         margin-bottom: .5em;
 
         font-size: 2.1rem;
+        font-style: oblique;
+        color: #b9dcfc;
     }
 
     &-weather {
@@ -129,6 +131,10 @@ input {
 }
 
 @media screen and (max-width: 25.5em) {
+    .card {
+        height: 70vh;
+    }
+
     .card-title {
         font-size: 1.55rem;
     }
