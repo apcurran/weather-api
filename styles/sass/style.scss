@@ -58,8 +58,8 @@ input {
 
     &-weather {
         display: flex;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
 
         &-temp {
             margin-right: 1em;
@@ -88,18 +88,20 @@ input {
     
     &-location {
         flex-grow: 1;
-        margin-bottom: 1em;
+        margin-bottom: 2rem;
 
         padding: .5rem 1rem;
         text-align: center;
         border: none;
         outline: #386fa1;
         transition: box-shadow 200ms ease;
+        background-color: rgba(255, 255, 255, 0.932);
     }
 
     &-submit-btn {
         flex-grow: 1;
         padding: .5rem 1rem;
+        margin-bottom: 2rem;
         border: none;
         border-radius: 4px;
         color: #fff;
@@ -113,7 +115,7 @@ input {
 }
 
 .footer {
-    padding: 2.5em;
+    padding: 2.5rem;
 
     display: flex;
     justify-content: center;
@@ -123,7 +125,7 @@ input {
     color: #fff;
 
     &-author {
-        margin-bottom: .5em;
+        margin-bottom: 1rem;
     }
 
     &-attribution a {
