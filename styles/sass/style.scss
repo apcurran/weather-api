@@ -75,6 +75,7 @@ input {
 }
 
 .user {
+    width: 17rem;
     display: flex;
     flex-direction: column;
 
@@ -84,7 +85,6 @@ input {
     }
     
     &-location {
-        flex-grow: 1;
         margin-bottom: 2rem;
 
         padding: .5rem 1rem;
@@ -96,7 +96,6 @@ input {
     }
 
     &-submit-btn {
-        flex-grow: 1;
         padding: .5rem 1rem;
         margin-bottom: 2rem;
         border: none;
@@ -132,12 +131,5 @@ input {
 
     &-attribution a {
         color: inherit;
-    }
-}
-
-@media screen and (max-width: 25.5em) {
-
-    .card-title {
-        font-size: 1.55rem;
     }
 }
