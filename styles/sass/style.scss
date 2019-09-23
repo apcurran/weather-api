@@ -36,7 +36,6 @@ input {
     width: 1260px;
     padding: 5rem 0;
 
-    background-color: rgba(12, 122, 158, 0.2);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -44,7 +43,6 @@ input {
     align-items: center;
 
     border-radius: 4px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .1);
 
     &-title {
         margin-top: .5em;

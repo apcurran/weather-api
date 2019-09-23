@@ -31,14 +31,12 @@ input {
   max-width: 90%;
   width: 1260px;
   padding: 5rem 0;
-  background-color: rgba(12, 122, 158, 0.2);
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 .card-title {
   margin-top: 0.5em;
