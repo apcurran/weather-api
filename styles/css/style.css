@@ -30,8 +30,7 @@ input {
 .card {
   max-width: 90%;
   width: 1260px;
-  height: 60vh;
-  padding: 2em;
+  padding: 5rem 0;
   background-color: rgba(12, 122, 158, 0.2);
   color: #fff;
   display: flex;
@@ -90,8 +89,12 @@ input {
   border: none;
   border-radius: 4px;
   color: #fff;
-  background-color: #386fa1;
+  background-color: #4282bd;
   cursor: pointer;
+  transition: background-color 200ms ease;
+}
+.user-submit-btn:hover {
+  background-color: #356897;
 }
 
 .user-location:focus {
