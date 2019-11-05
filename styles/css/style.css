@@ -108,13 +108,20 @@ input {
   align-items: center;
   flex-direction: column;
   font-size: 0.9rem;
-  color: #fff;
+  color: #737373;
 }
 .footer-author {
   margin-bottom: 1rem;
 }
 .footer-attribution a {
   color: inherit;
+}
+
+@media screen and (max-width: 50rem) {
+  .site {
+    background: none;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
