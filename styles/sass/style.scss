@@ -52,7 +52,7 @@ input {
 
         font-size: 2.1rem;
         font-style: oblique;
-        color: #0a4175;
+        color: #4285f4;
     }
 
     &-weather {
@@ -66,7 +66,7 @@ input {
         }
 
         &-description {
-            color: #38a169;
+            color: #667eea;
         }
     }
 }
@@ -104,12 +104,12 @@ input {
         border: none;
         border-radius: 500px;
         color: #fff;
-        background-color: hsl(209, 48%, 50%);
+        background-color: #4285f4;
         cursor: pointer;
         transition: background-color 200ms ease;
 
         &:hover {
-            background-color: hsl(209, 48%, 40%);
+            background-color: hsl(217, 89%, 51%);
         }
     }
 }

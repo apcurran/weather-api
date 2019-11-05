@@ -45,7 +45,7 @@ input {
   margin-bottom: 0.5em;
   font-size: 2.1rem;
   font-style: oblique;
-  color: #0a4175;
+  color: #4285f4;
 }
 .card-weather {
   display: flex;
@@ -57,7 +57,7 @@ input {
   cursor: pointer;
 }
 .card-weather-description {
-  color: #38a169;
+  color: #667eea;
 }
 
 .icon {
@@ -89,12 +89,12 @@ input {
   border: none;
   border-radius: 500px;
   color: #fff;
-  background-color: #4282bd;
+  background-color: #4285f4;
   cursor: pointer;
   transition: background-color 200ms ease;
 }
 .user-submit-btn:hover {
-  background-color: #356897;
+  background-color: #1368f1;
 }
 
 .user-location:focus {
