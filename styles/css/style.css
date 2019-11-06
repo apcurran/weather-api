@@ -117,7 +117,7 @@ input {
   flex-direction: column;
   font-size: 0.8rem;
   font-weight: 300;
-  color: #737373;
+  color: #a6a6a6;
 }
 .footer-author {
   margin-bottom: 1rem;
@@ -130,6 +130,18 @@ input {
   .site {
     background: none;
     justify-content: center;
+  }
+
+  .card {
+    margin-top: 1.75rem;
+    padding: 1.5rem 0;
+  }
+  .card-title {
+    font-size: 1.75rem;
+  }
+
+  .footer {
+    font-size: 0.7rem;
   }
 }
 

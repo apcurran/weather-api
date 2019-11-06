@@ -140,7 +140,7 @@ input {
     flex-direction: column;
     font-size: .8rem;
     font-weight: 300;
-    color: hsl(0, 0%, 45%);
+    color: hsl(0, 0%, 65%);
 
     &-author {
         margin-bottom: 1rem;
@@ -155,6 +155,20 @@ input {
     .site {
         background: none;
         justify-content: center;
-        // align-items: center;
     }
+
+    .card {
+        margin-top: 1.75rem;
+        padding: 1.5rem 0;
+
+        &-title {
+            font-size: 1.75rem;
+        }
+    }
+
+    .footer {
+        font-size: .7rem;
+    }
+
+
 }
