@@ -3,8 +3,7 @@ Simple App with JavaScript Fetch and Weather API
 
 Project [link](https://apcurran.github.io/weather-api/)
 
-![Weather App]
-(https://github.com/apcurran/weather-api/blob/master/images/weather-app.jpg)
+![Weather App](https://github.com/apcurran/weather-api/blob/master/images/weather-app-sm.jpg)
 
 ## Features:
 
