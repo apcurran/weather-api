@@ -7,8 +7,8 @@
 html,
 button,
 input {
-    font-family: "Calibri Light", Arial, Helvetica, sans-serif;
-    letter-spacing: .06em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .02em;
 }
 
 .site {
@@ -50,9 +50,14 @@ input {
         margin-top: .5em;
         margin-bottom: .5em;
 
-        font-size: 2.1rem;
+        font-size: 2rem;
+        font-weight: 400;
         font-style: oblique;
         color: #4285f4;
+    }
+
+    &-city {
+        font-weight: 300;
     }
 
     &-weather {
@@ -71,6 +76,14 @@ input {
     }
 }
 
+.degree {
+    &-number,
+    &-symbol,
+    &-unit {
+        font-weight: 300;
+    }
+}
+
 .icon {
     width: 100px;
     height: 100px;
@@ -83,7 +96,7 @@ input {
 
     &-location,
     &-submit-btn {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     &-location {
@@ -125,7 +138,8 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: .9rem;
+    font-size: .8rem;
+    font-weight: 300;
     color: hsl(0, 0%, 45%);
 
     &-author {
